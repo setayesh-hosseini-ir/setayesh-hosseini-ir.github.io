@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="fa" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>آینده ما - ستایش</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="آینده مشترک با ستایش">
+
+  <meta property="og:title" content="آینده ما - ستایش">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://justforyou.com/future.html">
+  <meta property="og:image" content="img/social-share.jpg">
+  <meta property="og:image:alt" content="آینده مشترک با ستایش">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#4a6cf7">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="logo">
+          <a href="index.html">
+            <h1 id="dynamic-header">سلام، ستایش</h1>
+          </a>
+        </div>
+
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li><a href="index.html">شروع</a></li>
+            <li><a href="journey.html">سفر تو</a></li>
+            <li><a href="memories.html">خاطرات</a></li>
+            <li><a href="future.html" class="active">آینده ما</a></li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Future Section -->
+  <section id="future" class="testimonials-section future-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">آنچه می‌تواند باشد</h2>
+        <p class="section-text">بسیاری گفتگوها با تو تصور کرده‌ام</p>
+      </div>
+
+      <div class="future-wrapper">
+        <div class="future-card">
+          <h3 class="future-title">گفتگو</h3>
+          <p class="future-text">
+            تصور کرده‌ام که ما در حال نوشیدن قهوه با هم صحبت می‌کنیم، درباره‌ی کتاب‌ها و فیلم‌ها بحث می‌کنیم، ایده‌ها را به چالش می‌کشیم و خنده‌ها را به اشتراک می‌گذاریم. لحظات ساده‌ای که بیشترین معنا را دارند.
+          </p>
+          <div class="future-choice">
+            <p>دوست داری درباره چه چیزی صحبت کنی؟</p>
+            <select id="conversation-topics" class="interactive-select">
+              <option value="">یک موضوع انتخاب کن...</option>
+              <option value="books">کتاب‌ها و داستان‌ها</option>
+              <option value="travel">رویاهای سفر</option>
+              <option value="philosophy">فلسفه زندگی</option>
+              <option value="dreams">برنامه‌های آینده</option>
+            </select>
+          </div>
+          <div id="conversation-response" class="conversation-response"></div>
+        </div>
+
+        <div class="future-card">
+          <h3 class="future-title">رشد با یکدیگر</h3>
+          <p class="future-text">
+            به این فکر کرده‌ام که چگونه ممکن است ما با هم رشد کنیم، یکدیگر را به چالش بکشیم، از رویاهای یکدیگر حمایت کنیم و چیزی معنادار بسازیم.
+          </p>
+          <div class="interactive-element">
+            <p>چه چیزی به رشد شما به عنوان یک فرد کمک می‌کند؟</p>
+            <div class="growth-buttons">
+              <button class="growth-btn" data-growth="challenges">چالش‌ها</button>
+              <button class="growth-btn" data-growth="learning">یادگیری</button>
+              <button class="growth-btn" data-growth="connection">ارتباط</button>
+            </div>
+          </div>
+          <div id="growth-response" class="growth-response"></div>
+        </div>
+      </div>
+
+      <div class="personal-message" id="personal-message">
+        <p>ممکن است همه این‌ها عجیب به نظر برسد، ستایش. یک وب‌سایت که نام تو را می‌داند و مستقیماً با تو صحبت می‌کند. اما در دنیایی پر از تجربه‌های عمومی، می‌خواستم چیزی بسازم که باعث شود احساس کنی واقعاً دیده شده‌ای.</p>
+        <div class="message-question">
+          <p>آیا آماده‌ای بدانی من کی هستم؟</p>
+          <div class="reveal-buttons">
+            <a href="connect.html" class="btn btn-primary">بله، آماده‌ام</a>
+            <button id="not-yet-btn" class="btn btn-outline">هنوز نه</button>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-message">
+          <h3 class="footer-logo">فقط و فقط برای تو</h3>
+          <p class="footer-desc">
+            این سایت مخصوص خودته! هیچکس دیگه‌ای دقیقاً این محتوا رو نمی‌بینه، قول میدم!
+          </p>
+          <p class="footer-note">
+            نگران نباش اگه بری و برگردی، سایت یادش میمونه کجا بودیم و از همونجا ادامه میدیم.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>با کلی انرژی و هیجان، مخصوص تو ساختمش! <span id="current-date"></span></p>
+        <p class="hidden-message" id="hidden-message">امیدوارم روی لبات یه لبخند بزرگ آورده باشه!</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/multi-page.js"></script>
+  <script src="js/progress-indicator.js"></script>
+</body>
+
+</html>
