@@ -21,6 +21,9 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#4a6cf7">
 
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="css/responsive.css">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,31 +87,33 @@
 
         <div class="connect-response">
           <div class="response-card">
-            <h3>پاسخ شما</h3>
-            <p class="response-text">دوست دارم نظر شما را درباره همه این‌ها بشنوم. آیا این خلاقانه بود یا فقط عجیب؟ آیا مایل به برقراری ارتباط هستید؟</p>
+            <h3>نظرت چیه؟</h3>
+            <p class="response-text">دوست دارم بدونم درباره همه اینا چی فکر می‌کنی. به نظرت باحال بود یا فقط عجیب؟ دوست داری بیشتر با هم آشنا بشیم؟</p>
             <form id="responseForm">
               <div class="form-group">
-                <label for="feeling">این چه احساسی در شما ایجاد می‌کند؟</label>
+                <label for="feeling">چه حسی بهت داد؟</label>
                 <select id="feeling" class="form-control">
-                  <option value="">انتخاب کنید...</option>
-                  <option value="intrigued">کنجکاو</option>
-                  <option value="flattered">تحت تأثیر قرار گرفته</option>
-                  <option value="confused">گیج شده</option>
-                  <option value="impressed">از تلاش تحت تأثیر قرار گرفته</option>
+                  <option value="">یه چیزی انتخاب کن...</option>
+                  <option value="intrigued">کنجکاو شدم</option>
+                  <option value="flattered">خوشم اومد</option>
+                  <option value="confused">یکم گیج شدم</option>
+                  <option value="impressed">واقعاً تحت تأثیر قرار گرفتم</option>
                 </select>
               </div>
-              <div class="form-group">
-                <label for="response-message">پیام شما به من:</label>
-                <textarea id="response-message" rows="4" placeholder="افکار صادقانه خود را اینجا تایپ کنید..."></textarea>
               </div>
-              <div class="decision-buttons">
+              <div class="form-group">
+                <label for="response-message">پیامت به من:</label>
+                <textarea id="response-message" rows="4" placeholder="هر چی تو دلت هست اینجا بنویس..."></textarea>
+              </div>
+              <div class="form-actions">
+                <div class="decision-buttons">
                 <button type="button" id="yes-connect" class="btn btn-primary">بیا ارتباط برقرار کنیم</button>
               </div>
             </form>
           </div>
           <div id="final-message" class="final-message hidden">
-            <p>از اینکه وقت گذاشتی و این وب‌سایت را کاوش کردی و پیام من را در نظر گرفتی، متشکرم. مهم نیست چه تصمیمی بگیری، می‌خواستم بدانی که تو بر من تأثیر گذاشته‌ای.</p>
-            <p>این سایت فضای مخفی ما باقی خواهد ماند - یک نامه دیجیتالی که فقط برای تو مناسب است.</p>
+            <p>مرسی که وقت گذاشتی و این سایت رو دیدی و به پیامم فکر کردی. چه تصمیمی بگیری برام مهم نیست، فقط می‌خواستم بدونی که خیلی روم تأثیر گذاشتی.</p>
+            <p>این سایت یه جورایی فضای خصوصی ما می‌مونه - مثل یه نامه دیجیتالی که فقط مال خودته.</p>
           </div>
         </div>
       </div>
@@ -139,6 +144,7 @@
   <script src="js/app.js"></script>
   <script src="js/multi-page.js"></script>
   <script src="js/progress-indicator.js"></script>
+  <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>

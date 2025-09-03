@@ -21,6 +21,9 @@
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#4a6cf7">
 
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="css/responsive.css">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,18 +63,18 @@
   <section id="future" class="testimonials-section future-section">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">آنچه می‌تواند باشد</h2>
-        <p class="section-text">بسیاری گفتگوها با تو تصور کرده‌ام</p>
+        <h2 class="section-title">چیزایی که می‌تونه باشه</h2>
+        <p class="section-text">کلی گفتگو با خودت تو ذهنم تصور کردم</p>
       </div>
 
       <div class="future-wrapper">
         <div class="future-card">
-          <h3 class="future-title">گفتگو</h3>
+          <h3 class="future-title">گپ زدن</h3>
           <p class="future-text">
-            تصور کرده‌ام که ما در حال نوشیدن قهوه با هم صحبت می‌کنیم، درباره‌ی کتاب‌ها و فیلم‌ها بحث می‌کنیم، ایده‌ها را به چالش می‌کشیم و خنده‌ها را به اشتراک می‌گذاریم. لحظات ساده‌ای که بیشترین معنا را دارند.
+            تصور کردم داریم با هم قهوه می‌خوریم و گپ می‌زنیم، درباره کتابا و فیلما حرف می‌زنیم، ایده‌هامونو به چالش می‌کشیم و کلی می‌خندیم. همون لحظه‌های ساده‌ای که بیشترین معنی رو دارن.
           </p>
           <div class="future-choice">
-            <p>دوست داری درباره چه چیزی صحبت کنی؟</p>
+            <p>دوست داری درباره چی حرف بزنیم؟</p>
             <select id="conversation-topics" class="interactive-select">
               <option value="">یک موضوع انتخاب کن...</option>
               <option value="books">کتاب‌ها و داستان‌ها</option>
@@ -84,12 +87,12 @@
         </div>
 
         <div class="future-card">
-          <h3 class="future-title">رشد با یکدیگر</h3>
+          <h3 class="future-title">رشد کردن با هم</h3>
           <p class="future-text">
-            به این فکر کرده‌ام که چگونه ممکن است ما با هم رشد کنیم، یکدیگر را به چالش بکشیم، از رویاهای یکدیگر حمایت کنیم و چیزی معنادار بسازیم.
+            به این فکر کردم که چطور می‌تونیم با هم رشد کنیم، همدیگه رو به چالش بکشیم، از رویاهای هم حمایت کنیم و یه چیز باحال و معنی‌دار بسازیم.
           </p>
           <div class="interactive-element">
-            <p>چه چیزی به رشد شما به عنوان یک فرد کمک می‌کند؟</p>
+            <p>چی بیشتر بهت کمک می‌کنه که رشد کنی؟</p>
             <div class="growth-buttons">
               <button class="growth-btn" data-growth="challenges">چالش‌ها</button>
               <button class="growth-btn" data-growth="learning">یادگیری</button>
@@ -101,16 +104,19 @@
       </div>
 
       <div class="personal-message" id="personal-message">
-        <p>ممکن است همه این‌ها عجیب به نظر برسد، ستایش. یک وب‌سایت که نام تو را می‌داند و مستقیماً با تو صحبت می‌کند. اما در دنیایی پر از تجربه‌های عمومی، می‌خواستم چیزی بسازم که باعث شود احساس کنی واقعاً دیده شده‌ای.</p>
+        <p>می‌دونم که همه اینا شاید یکم عجیب به نظر برسه، ستایش جان! یه سایت که اسمت رو می‌دونه و مستقیم باهات حرف می‌زنه. ولی تو این دنیایی که پر از چیزای عمومی و تکراریه، می‌خواستم یه چیزی بسازم که حس کنی واقعاً دیده شدی.</p>
         <div class="message-question">
-          <p>آیا آماده‌ای بدانی من کی هستم؟</p>
+          <p>آماده‌ای بدونی من کی‌ام؟</p>
           <div class="reveal-buttons">
-            <a href="connect.html" class="btn btn-primary">بله، آماده‌ام</a>
-            <button id="not-yet-btn" class="btn btn-outline">هنوز نه</button>
+            <a href="connect.html" class="btn btn-primary">آره، آماده‌ام</a>
+            <button id="not-yet-btn" class="btn btn-outline">فعلاً نه</button>
           </div>
         </div>
       </div>
-      <br>
+      <div class="navigation-buttons">
+        <a href="memories.html" class="btn btn-outline">بازگشت</a>
+        <a href="connect.html" class="btn btn-primary">ادامه به ارتباط</a>
+      </div>
     </div>
   </section>
   <!-- Footer -->
@@ -118,12 +124,12 @@
     <div class="container">
       <div class="footer-wrapper">
         <div class="footer-message">
-          <h3 class="footer-logo">فقط و فقط برای تو</h3>
+          <h3 class="footer-logo">فقط واسه خودت</h3>
           <p class="footer-desc">
-            این سایت مخصوص خودته! هیچکس دیگه‌ای دقیقاً این محتوا رو نمی‌بینه، قول میدم!
+            این سایت مال خودته! هیشکی دیگه‌ای دقیقاً این چیزایی که می‌بینی رو نمی‌بینه، قول میدم!
           </p>
           <p class="footer-note">
-            نگران نباش اگه بری و برگردی، سایت یادش میمونه کجا بودیم و از همونجا ادامه میدیم.
+            نگران نباش اگه بری و برگردی، سایت یادش می‌مونه کجا بودیم و از همونجا ادامه می‌دیم.
           </p>
         </div>
       </div>
@@ -138,6 +144,7 @@
   <script src="js/app.js"></script>
   <script src="js/multi-page.js"></script>
   <script src="js/progress-indicator.js"></script>
+  <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>
